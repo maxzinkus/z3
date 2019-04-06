@@ -20,7 +20,11 @@ Revision History:
 #define SAT_SOLVER_CORE_H_
 
 
+#include "util/rlimit.h"
+#include "model/model.h"
 #include "sat/sat_types.h"
+#include "sat/sat_extension.h"
+#include "sat/sat_model_converter.h"
 
 namespace sat {
     

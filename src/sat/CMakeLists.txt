@@ -26,6 +26,7 @@ z3_add_component(sat
     sat_solver.cpp
     sat_unit_walk.cpp
     sat_watched.cpp
+    sat_cmsat.cpp
   COMPONENT_DEPENDENCIES
     util
   PYG_FILES
