@@ -34,9 +34,7 @@ unsigned cmsolver::num_vars() const
 
 unsigned cmsolver::num_clauses() const
 {
-    //msoos: I could implment this, but I'm curious why it's important.
-    //msoos: Let me pick this up.
-    return 10000;
+    return solver.num_clauses_irred()+solver.num_clauses_red();
 }
 
 // check satisfiability
