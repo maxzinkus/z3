@@ -2,6 +2,7 @@
 #define SAT_CMSAT_H_
 
 #include "sat_solver_core.h"
+#include "cryptominisat5/cryptominisat.h"
 
 namespace sat {
     class cmsolver : public solver_core {
@@ -83,6 +84,8 @@ namespace sat {
 
         // collect statistics from sat solver
         virtual void collect_statistics(statistics & st) const;
+
+        CMSat::SATSolver solver;
     };
 
 } //namespace sat

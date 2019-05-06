@@ -1,5 +1,4 @@
 #include "sat_cmsat.h"
-#include "cryptominisat5/cryptominisat.h"
 using namespace sat;
 
 cmsolver::cmsolver(reslimit& l) :
