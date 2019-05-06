@@ -26,10 +26,16 @@ bool cmsolver::inconsistent() const
 
 // number of variables and clauses
 unsigned cmsolver::num_vars() const
-{}
+{
+    return solver.nVars();
+}
 
 unsigned cmsolver::num_clauses() const
-{}
+{
+    //msoos: I could implment this, but I'm curious why it's important.
+    //msoos: Let me pick this up.
+    return 10000;
+}
 
 // check satisfiability
 lbool cmsolver::check(unsigned num_lits, literal const* lits)
