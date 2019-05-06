@@ -1,3 +1,4 @@
+include_directories(${CRYPTOMINISAT5_INCLUDE_DIRS})
 z3_add_component(sat
   SOURCES
     ba_solver.cpp
