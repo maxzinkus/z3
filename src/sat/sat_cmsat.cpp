@@ -22,7 +22,9 @@ literal_vector const& cmsolver::get_core() const {
 
 // is the state inconsistent?
 bool cmsolver::inconsistent() const
-{}
+{
+    return !solver.okay();
+}
 
 // number of variables and clauses
 unsigned cmsolver::num_vars() const
