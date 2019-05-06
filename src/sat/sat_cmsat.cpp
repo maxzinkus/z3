@@ -34,6 +34,7 @@ unsigned cmsolver::num_vars() const
 
 unsigned cmsolver::num_clauses() const
 {
+    //NOTE: this needs "master-z3" branch from CryptoMiniSat
     return solver.num_clauses_irred()+solver.num_clauses_red();
 }
 
